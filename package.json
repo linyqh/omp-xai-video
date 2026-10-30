@@ -1,0 +1,23 @@
+{
+	"name": "omp-xai-video",
+	"version": "0.1.0",
+	"description": "oh-my-pi extension: generate videos with xAI Grok Imagine",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/linyqh/omp-xai-video.git"
+	},
+	"omp": {
+		"extensions": ["./index.ts"]
+	},
+	"files": ["index.ts", "src"],
+	"scripts": {
+		"check": "tsc --noEmit",
+		"test": "bun test"
+	},
+	"devDependencies": {
+		"@oh-my-pi/pi-coding-agent": "^18.14.0",
+		"@types/bun": "latest",
+		"typescript": "^5.9.0"
+	}
+}
